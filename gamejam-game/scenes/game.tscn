@@ -14,7 +14,28 @@ position = Vector2(0, -1)
 script = ExtResource("2_jmend")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(0, 316)
+position = Vector2(0, 325)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_x3gv3")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(575, 316)
+rotation = -1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("WorldBoundaryShape2D_x3gv3")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-575, 316)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource("WorldBoundaryShape2D_x3gv3")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(0, -325)
+rotation = 3.14159
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
 shape = SubResource("WorldBoundaryShape2D_x3gv3")
